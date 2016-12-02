@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CCC6D2774C2F07025260C0B /* Pods_hello_world_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526E7AFAC6B07D76625370F4 /* Pods_hello_world_ios.framework */; };
 		5B6D9C0E1DF1653B00AE08AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D9C0D1DF1653B00AE08AD /* AppDelegate.swift */; };
 		5B6D9C101DF1653B00AE08AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D9C0F1DF1653B00AE08AD /* ViewController.swift */; };
 		5B6D9C131DF1653B00AE08AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D9C111DF1653B00AE08AD /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		526E7AFAC6B07D76625370F4 /* Pods_hello_world_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hello_world_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6D9C0A1DF1653A00AE08AD /* hello-world-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello-world-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6D9C0D1DF1653B00AE08AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6D9C0F1DF1653B00AE08AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		5B6D9C141DF1653B00AE08AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B6D9C171DF1653B00AE08AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B6D9C191DF1653B00AE08AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84102FDBCB95A2118CDBD49 /* Pods-hello-world-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-world-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hello-world-ios/Pods-hello-world-ios.release.xcconfig"; sourceTree = "<group>"; };
+		F83ADAE313D1412F2BD3A7AC /* Pods-hello-world-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-world-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hello-world-ios/Pods-hello-world-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCC6D2774C2F07025260C0B /* Pods_hello_world_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BEAA7FE4E79928EEEB56F8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F83ADAE313D1412F2BD3A7AC /* Pods-hello-world-ios.debug.xcconfig */,
+				C84102FDBCB95A2118CDBD49 /* Pods-hello-world-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B6D9C011DF1653A00AE08AD = {
 			isa = PBXGroup;
 			children = (
 				5B6D9C0C1DF1653A00AE08AD /* hello-world-ios */,
 				5B6D9C0B1DF1653A00AE08AD /* Products */,
+				2BEAA7FE4E79928EEEB56F8B /* Pods */,
+				DA1FEA6FCFCDED9F2BE51C3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "hello-world-ios";
 			sourceTree = "<group>";
 		};
+		DA1FEA6FCFCDED9F2BE51C3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				526E7AFAC6B07D76625370F4 /* Pods_hello_world_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B6D9C1C1DF1653B00AE08AD /* Build configuration list for PBXNativeTarget "hello-world-ios" */;
 			buildPhases = (
+				E32946CFF83871A11E9828B2 /* [CP] Check Pods Manifest.lock */,
 				5B6D9C061DF1653A00AE08AD /* Sources */,
 				5B6D9C071DF1653A00AE08AD /* Frameworks */,
 				5B6D9C081DF1653A00AE08AD /* Resources */,
+				5F89E42615340B66222FE27E /* [CP] Embed Pods Frameworks */,
+				DE5FC9B14DBAF5C5440F106F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F89E42615340B66222FE27E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hello-world-ios/Pods-hello-world-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE5FC9B14DBAF5C5440F106F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hello-world-ios/Pods-hello-world-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32946CFF83871A11E9828B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B6D9C061DF1653A00AE08AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,6 +256,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +307,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -258,6 +335,7 @@
 		};
 		5B6D9C1D1DF1653B00AE08AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83ADAE313D1412F2BD3A7AC /* Pods-hello-world-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "hello-world-ios/Info.plist";
@@ -270,6 +348,7 @@
 		};
 		5B6D9C1E1DF1653B00AE08AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84102FDBCB95A2118CDBD49 /* Pods-hello-world-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "hello-world-ios/Info.plist";
@@ -299,6 +378,7 @@
 				5B6D9C1E1DF1653B00AE08AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
